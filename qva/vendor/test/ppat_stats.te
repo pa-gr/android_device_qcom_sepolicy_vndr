@@ -46,13 +46,6 @@ allow vendor_ppat_stats vendor_ppat_stats_data_file:file create_file_perms;
 
 #allow vendor_ppat_stats default_android_vndservice:service_manager find;
 
-#allow vendor_ppat_stats vendor_hal_poweroptservice_hwservice:hwservice_manager find;
-
-#mark as hal server domain
-hal_server_domain(vendor_ppat_stats, vendor_hal_poweroptservice);
-#allow service to be added to hwservice list
-hal_attribute_hwservice(vendor_hal_poweroptservice, vendor_hal_poweroptservice_hwservice)
-
 allow vendor_ppat_stats vendor_hal_perf_hwservice:hwservice_manager find;
 
 # access to /sys/class/power_supply/battery/uevent

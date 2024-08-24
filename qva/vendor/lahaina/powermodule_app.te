@@ -30,7 +30,6 @@ type vendor_powermodule_app, domain;
 app_domain(vendor_powermodule_app);
 
 hal_client_domain(vendor_powermodule_app, vendor_hal_perf);
-hal_client_domain(vendor_powermodule_app, vendor_hal_poweroptservice)
 
 # Allow invoking activity of vendor_powermodule_app
 allow vendor_powermodule_app app_api_service:service_manager find;
