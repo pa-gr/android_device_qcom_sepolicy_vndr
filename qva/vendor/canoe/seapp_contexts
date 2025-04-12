@@ -64,6 +64,3 @@
 #Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
 #SPDX-License-Identifier: BSD-3-Clause-Clear
 
-#Add new domain for powermodule app
-user=_app seinfo=platform name=.powermodule domain=vendor_powermodule_app type=app_data_file levelFrom=all
-
